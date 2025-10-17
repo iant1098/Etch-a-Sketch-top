@@ -5,7 +5,7 @@ function createBoxes(n){
     container1.innerHTML = '';  /*It removes all the HTML content inside the container1 element, including:
                                 All child <div> elements (or any other elements inside it),All classes, attributes, text, everything inside container1*/
     
-    const containerSize = container1.clientWidth;
+    const containerSize = container1.clientWidth; //clientWidth returns the inner width of an element. It includes padding but excludes borders, margins, and scrollbars.
     let calcNumber = n * n;
     let size = containerSize / n;
     for(let i = 0; i < calcNumber; i++){
@@ -47,6 +47,6 @@ function newGrid(){
     alert("Over limit. Please try again.");
     newNumber = 16;
    }
-   newNumber = parseInt(newNumber);
+   newNumber = parseInt(newNumber); //Converts the string input from prompt into an integer number (e.g., "16" ➝ 16)
    createBoxes(newNumber);
 }
