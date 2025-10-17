@@ -1,0 +1,24 @@
+.centered {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px;
+}
+
+#container1 {
+    /*turns selected element into flex container, changes how the child element inside behave */
+    /*By default, Flexbox lays out children in a row (horizontally), instead of stacking them vertically like normal block elements.*/
+    display: flex;
+    
+    /*flex-wrap: wrap - tells the Flex container to wrap child elements onto the next line when there isn't 
+    enough space or it will squeeze onto one single horizontal line*/
+    flex-wrap: wrap;
+    width: 500px; 
+    height: 500px;
+    border: 1px solid black;   
+}
+
+#container1 div {
+    box-sizing: border-box; /*The actual content area is shrunk to make room for padding and border inside the height and width*/
+    border: 1px solid black;
+}
